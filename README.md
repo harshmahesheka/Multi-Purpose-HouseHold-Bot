@@ -9,11 +9,9 @@
     <a href=" "><strong>Explore the demo here »</strong></a>
     <br />
     <br />
-    <a href=" ">View Demo</a>
+    <a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/issues">Report Bug</a>
     ·
-    <a href=" ">Report Bug</a>
-    ·
-    <a href=" ">Request Feature</a>
+    <a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/issues">Request Feature</a>
   </p>
 </div>
 
@@ -28,6 +26,14 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#features">Features</a>
+      <ul>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#face-detection">Face Detection</a></li>
+        <li><a href="#baby-threat-detection">Baby Threat Detection</a></li>
+        <li><a href="#baby-following">Baby Following</a></li></li>
+    </ul>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -53,10 +59,6 @@ The core idea is to  add innovative features with a limited hardware which solve
 This a boon for all the working parents out there who are looking for a reliable solution to their process of setting up a balance between parenting and work. We know how a parent wants the best for their child and is ready to spend any amount of money to establish an amazing future for them, but here, with our bot, we provide them with all the necessary help in the best quality while taking care of their pockets!
 
 
-<p align="right">(<a href=" ">back to top</a>)</p>
-
-
-
 ### Built With
 
 The technologies used while building and testing the project are:
@@ -64,6 +66,29 @@ The technologies used while building and testing the project are:
 * [ROS](https://www.ros.org/)
 * [Gazebo](http://gazebosim.org/)
 * [SolidWorks](https://www.solidworks.com/)
+
+
+<p align="right">(<a href=" ">back to top</a>)</p>
+
+
+## Features
+
+### Navigation
+
+Find the demo of Navigation implementation [here](https://drive.google.com/file/d/1GFb-_O2ioxu-zdwylFPfyHNaHDGUox7V/view)
+
+### Face Detection
+
+Find the demo of Face Detection algorithm implementation [here](https://drive.google.com/file/d/1K6rV0f0d-TTYmIyUp-HNQ1cQ1N9isJMF/view)
+
+### Baby Threat Detection
+
+Find the demo of Threat Detection for baby  [here](https://drive.google.com/file/d/1K5NE13m8MZG6SAx4-36VjofmkLH4Blgi/view)
+
+### Baby Following
+
+Find the demo of baby follwoing [here](https://drive.google.com/file/d/1JxuwaeDJQHta6C9UJmLCamdO-b6d8-8v/view)
+
 
 <p align="right">(<a href=" ">back to top</a>)</p>
 
@@ -127,7 +152,7 @@ The project is open source and you are free to modify as per your needs.
 - [ ] Hardware of the bot (awaiting funding for our innovative idea)
 
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href=" ">back to top</a>)</p>
 
