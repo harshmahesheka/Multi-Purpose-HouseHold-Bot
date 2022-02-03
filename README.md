@@ -120,6 +120,17 @@ Find the demo of baby follwoing [here](https://drive.google.com/file/d/1JxuwaeDJ
 
 ## Hardware
 
+![EXPLO (1)](https://user-images.githubusercontent.com/78342516/152426551-8dad213e-0cb0-48df-8a62-15b817a533c4.png)
+
+
+* The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS.
+* The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid . This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing
+* The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.
+* The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. Various parameters like air velocity, pressure and temperature were simulated and plots were obtained.
+
+
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
