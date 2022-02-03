@@ -68,7 +68,7 @@ The technologies used while building and testing the project are:
 * [SolidWorks](https://www.solidworks.com/)
 
 
-<p align="right">(<a href=" ">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 
 ## Features
@@ -90,7 +90,7 @@ Find the demo of Threat Detection for baby  [here](https://drive.google.com/file
 Find the demo of baby follwoing [here](https://drive.google.com/file/d/1JxuwaeDJQHta6C9UJmLCamdO-b6d8-8v/view)
 
 
-<p align="right">(<a href=" ">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 
 
@@ -119,7 +119,7 @@ _Now that you're ready with the prerequisites, setup the project using the follo
 3. 
 4. 
 
-<p align="right">(<a href=" ">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 
 
@@ -131,7 +131,7 @@ Communication, security, hygiene, child’s social growth, you name it and we’
 The project is open source and you are free to modify as per your needs. 
 
 
-<p align="right">(<a href=" ">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 
 
@@ -148,7 +148,7 @@ The project is open source and you are free to modify as per your needs.
 
 See the [open issues](https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href=" ">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 
 
@@ -166,7 +166,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin  branchName`)
 5. Open a Pull Request
 
-<p align="right">(<a href=" ">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 
 
@@ -178,4 +178,4 @@ This project is a result of mutual collaboration of these members:
 
 * 
 
-<p align="right">(<a href=" ">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
