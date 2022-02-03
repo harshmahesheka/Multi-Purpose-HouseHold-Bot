@@ -146,9 +146,7 @@ How to set-up the project
 ### Prerequisites
 
 Before getting started, make sure your systme meets the following requirements:
-* npm
-  ```sh
-  npm install npm@latest -g
+* 
   ```
 
 ### Installation
@@ -209,17 +207,5 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin  branchName`)
 5. Open a Pull Request
-
-<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
-
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-This project is a result of mutual collaboration of these members:
-
-* 
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
