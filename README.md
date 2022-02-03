@@ -1,5 +1,8 @@
 
 <div align="center">
+  
+![ros4](https://user-images.githubusercontent.com/78342516/152425168-dfcc35bf-6dd3-445f-a1cd-bf0d3f41a566.jpeg)
+
 
   <h1 align="center">Multipurpose Household Bot</h1>
 
@@ -21,15 +24,19 @@
 <details>
   <ol>
     <li>
+       <a href="#idea-behind-the-project">Idea Behind The Project</a>
+    </li>
+    <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#navigation">Navigation</a></li>
+    <li><a href="#hardware">Hardware</a></li>
     <li>
       <a href="#features">Features</a>
       <ul>
-        <li><a href="#navigation">Navigation</a></li>
         <li><a href="#face-detection">Face Detection</a></li>
         <li><a href="#baby-threat-detection">Baby Threat Detection</a></li>
         <li><a href="#baby-following">Baby Following</a></li></li>
@@ -51,13 +58,16 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Idea behind the project
 
 The basic idea of this bot is to create a multi-purpose household bot with a lot of features which justifies its price for an average household. Most household bots today only do single things like cleaning, playing but without increasing hardware significantly (which will not increase the cost) we can add a lot of features. The bot will help in all day to day activities ranging from baby care, cleaning, security and a lot more. Many small and innovative ideas like detachable components and DIY tutorials will increase its usability and decrease cost. We will also make it modifiable and programmable by users so that they can experiment with it, learn, and add new features. 
 The core idea is to  add innovative features with a limited hardware which solve small day to day problems.
 
 This a boon for all the working parents out there who are looking for a reliable solution to their process of setting up a balance between parenting and work. We know how a parent wants the best for their child and is ready to spend any amount of money to establish an amazing future for them, but here, with our bot, we provide them with all the necessary help in the best quality while taking care of their pockets!
 
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
+
+## About the project
 
 ### Built With
 
@@ -71,17 +81,33 @@ The technologies used while building and testing the project are:
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 
-## Features
 
-### Navigation
+
+## Navigation
+
+<img width="638" alt="ros" src="https://user-images.githubusercontent.com/78342516/152424295-a60876e4-98ac-4be3-befd-8f7058902725.PNG">
+
+
+We implemented ROS Navigation Stack on our Bot to autonomously navigate it through house. We used Gmappping SLam for map making,AMCL for localization, teb_local_planner as local planner and A* based algorithm as global planner
+
 
 Find the demo of Navigation implementation [here](https://drive.google.com/file/d/1GFb-_O2ioxu-zdwylFPfyHNaHDGUox7V/view)
 
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
+
+## Features
+
 ### Face Detection
+
+<img width="638" alt="ros2" src="https://user-images.githubusercontent.com/78342516/152424555-22d898be-4785-43a8-8774-770f3140c19f.PNG">
+
 
 Find the demo of Face Detection algorithm implementation [here](https://drive.google.com/file/d/1K6rV0f0d-TTYmIyUp-HNQ1cQ1N9isJMF/view)
 
 ### Baby Threat Detection
+
+<img width="641" alt="ros3" src="https://user-images.githubusercontent.com/78342516/152424816-6c31d4d6-59c6-4d9f-8395-a29e82bfba5b.PNG">
+
 
 Find the demo of Threat Detection for baby  [here](https://drive.google.com/file/d/1K5NE13m8MZG6SAx4-36VjofmkLH4Blgi/view)
 
@@ -92,7 +118,7 @@ Find the demo of baby follwoing [here](https://drive.google.com/file/d/1JxuwaeDJ
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
-
+## Hardware
 
 <!-- GETTING STARTED -->
 ## Getting Started
