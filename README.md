@@ -117,13 +117,7 @@ _Now that you're ready with the prerequisites, setup the project using the follo
    git clone https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot.git
    ```
 3. 
-   ```sh
-   npm install
-   ```
 4. 
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 <p align="right">(<a href=" ">back to top</a>)</p>
 
@@ -174,11 +168,6 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href=" ">back to top</a>)</p>
 
-<!-- CONTACT -->
-## Contact
-
-
-<p align="right">(<a href=" ">back to top</a>)</p>
 
 
 
