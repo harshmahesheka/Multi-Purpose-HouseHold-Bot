@@ -153,7 +153,17 @@ Find the demo of Navigation implementation [here](https://drive.google.com/file/
 
 ## Features
 
-### Face Detection
+### Face Recognition
+
+- We use a custom build AI model, combinind both, a pretrained ResNet model and the OpenCV haarcascade funtion to develop face recognition algorithm.
+
+- The weights of the model were pretrained, they convert the image into a vector of length 128. And then the vectors are compared between themselves using a siamese network architecture. 
+
+- The OpenCV haarcascade function first detects all the images in a given frame and then compares the faces with those present in the database. (Already stored in the system)
+
+- If the faces match or are within a threshold value, the bot recognises the person and greets him/ Her. If not, the bot considers it as an intruder and triggers an alarm through the system.
+- You can see the code [here](https://colab.research.google.com/drive/1R8DMmd4irxbfXU8tUebgAP64VtLyI3eQ?usp=sharing)
+
 
 <img width="638" alt="ros2" src="https://user-images.githubusercontent.com/78342516/152424555-22d898be-4785-43a8-8774-770f3140c19f.PNG">
 
@@ -162,12 +172,22 @@ Find the demo of Face Detection algorithm implementation [here](https://drive.go
 
 ### Baby Threat Detection
 
+- The same algorithms used above are applied here.
+- The objective being to protect a baby from an outsider or intruder when the parents are not at home.
+- The algorithm first recognises all the faces in the frame and if both baby and intruder are detected in a frame, it triggers an alarm.
+
 <img width="641" alt="ros3" src="https://user-images.githubusercontent.com/78342516/152424816-6c31d4d6-59c6-4d9f-8395-a29e82bfba5b.PNG">
 
 
 Find the demo of Threat Detection for baby  [here](https://drive.google.com/file/d/1K5NE13m8MZG6SAx4-36VjofmkLH4Blgi/view)
 
 ### Baby Following
+
+- As we know, Babies crawl around all the time.
+- And may swallow things or be around dangerous objects like knife, scissors, etc. 
+- This feature of the bot follows the baby around and triggers an alarm or sends parents a message when the baby is near a harmful object or so.
+- Here we use custum build algorithm using pretrained YOLOv3 weights to perform object detection.
+- The YOLOv3 (You Only Look Once) model is an object detection architecture that uses a 106 layer network comprising of multiple Convolution, residual and 1\*1 kernel layers to perform the object detection task.
 
 Find the demo of baby follwoing [here](https://drive.google.com/file/d/1JxuwaeDJQHta6C9UJmLCamdO-b6d8-8v/view)
 
