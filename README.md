@@ -1,7 +1,7 @@
 
 <div align="center">
   
-![ros4](https://user-images.githubusercontent.com/78342516/152425168-dfcc35bf-6dd3-445f-a1cd-bf0d3f41a566.jpeg)
+![bot](https://user-images.githubusercontent.com/78396437/152589170-78b3718a-d0b6-463f-b0e1-5b8f4161322f.jpeg)
 
 
   <h1 align="center">Multipurpose Household Bot</h1>
