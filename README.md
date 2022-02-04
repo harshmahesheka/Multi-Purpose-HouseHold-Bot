@@ -172,12 +172,22 @@ Find the demo of Face Detection algorithm implementation [here](https://drive.go
 
 ### Baby Threat Detection
 
+- The same algorithms used above are applied here.
+- The objective being to protect a baby from an outsider or intruder when the parents are not at home.
+- The algorithm first recognises all the faces in the frame and if both baby and intruder are detected in a frame, it triggers an alarm.
+
 <img width="641" alt="ros3" src="https://user-images.githubusercontent.com/78342516/152424816-6c31d4d6-59c6-4d9f-8395-a29e82bfba5b.PNG">
 
 
 Find the demo of Threat Detection for baby  [here](https://drive.google.com/file/d/1K5NE13m8MZG6SAx4-36VjofmkLH4Blgi/view)
 
 ### Baby Following
+
+- As we know, Babies crawl around all the time.
+- And may swallow things or be around dangerous objects like knife, scissors, etc. 
+- This feature of the bot follows the baby around and triggers an alarm or sends parents a message when the baby is near a harmful object or so.
+- Here we use custum build algorithm using pretrained YOLOv3 weights to perform object detection.
+- The YOLOv3 (You Only Look Once) model is an object detection architecture that uses a 106 layer network comprising of multiple Convolution, residual and 1\*1 kernel layers to perform the object detection task.
 
 Find the demo of baby follwoing [here](https://drive.google.com/file/d/1JxuwaeDJQHta6C9UJmLCamdO-b6d8-8v/view)
 
