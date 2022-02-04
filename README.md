@@ -134,24 +134,23 @@ The vacuum system of the bot sucks in air along with dust particles from the bot
 <img width="638" alt="ros" src="https://user-images.githubusercontent.com/78342516/152424295-a60876e4-98ac-4be3-befd-8f7058902725.PNG">
 
 
-We used Differntial Drive along with ROS Navigation Stack on our Bot to autonomously navigate it through house.We developed 4 moods fot it's navigation-
+We used Differential Drive along with ROS Navigation Stack on our Bot to autonomously navigate it through house.We developed 4 moods for it's navigation-
 
- a.*Teleop Controlled*-In this ypu can simply control bots motion by publishing on cmd_vel topic.
+ a.*Teleop Controlled*-In this you can simply control bots motion by publishing on cmd_vel topic.
 
- b.*Autonomus Mapping*This will be used when a new bot comes to home,in this bot will atonomusly map the whole house by finding regions which are not mapped.We used <a href="http://wiki.ros.org/explore_lite">explore_lite</a> along with ROS Navigation Stack for this.To launch this mood run
+ b.*Autonomous Mapping*-This will be used when a new bot comes to home,in this bot will autonomously map the whole house by finding regions which are not mapped.We used <a href="http://wiki.ros.org/explore_lite">explore_lite</a> along with ROS Navigation Stack for this.To launch this mood run
  ```bash
  roslaunch rbot mapping.launch
  ```
  
- c.*Autonmous Navigation*-This will allow you to autonomusly send bot anywhere in generated also avoiding both static and dynamic obstacles.We used ROS Navigation Stack along with <a href="http://wiki.ros.org/teb_local_planner">teb_local_planner</a> as local planner.To launch this mood run 
+ c.*Autonomous Navigation*-This will allow you to autonomously send bot anywhere in generated also avoiding both static and dynamic obstacles.We used ROS Navigation Stack along with <a href="http://wiki.ros.org/teb_local_planner">teb_local_planner</a> as local planner.To launch this mood run 
   ```bash
  roslaunch rbot navigation.launch
  ```
- d.*Autonomus Complete Coverage*-In night you can simply run this mood and bot will autonomusly vacuum your whole house following an optimal complete coverage path.We have used <a href="http://wiki.ros.org/full_coverage_path_planner">full_coverage_path_planner</a> as global planner along with teb_local_planner as local planner.To launch this mood run-
+ d.*Autonomous Complete Coverage*-In night you can simply run this mood and bot will autonomously vacuum your whole house following an optimal complete coverage path.We have used <a href="http://wiki.ros.org/full_coverage_path_planner">full_coverage_path_planner</a> as global planner along with teb_local_planner as local planner.To launch this mood run-
  ```bash
  roslaunch rbot complete_coverage.launch
  ```
-  
 Find the demo of Navigation implementation [here](https://drive.google.com/file/d/1GFb-_O2ioxu-zdwylFPfyHNaHDGUox7V/view)
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
