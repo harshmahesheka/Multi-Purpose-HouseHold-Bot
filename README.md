@@ -1,7 +1,8 @@
 
 <div align="center">
   
-![bot](https://user-images.githubusercontent.com/78396437/152589170-78b3718a-d0b6-463f-b0e1-5b8f4161322f.jpeg)
+![Mpb-1](https://user-images.githubusercontent.com/78396437/152593443-f7d65b8c-38f3-4988-9cdb-bf2c649a5647.gif)
+
 
 
   <h1 align="center">Multipurpose Household Bot</h1>
@@ -112,16 +113,19 @@ roslaunch rbot house.launch
 
 ## Hardware
 
-<p float="left">
-  
- ![bot](https://user-images.githubusercontent.com/78396437/152589170-78b3718a-d0b6-463f-b0e1-5b8f4161322f.jpeg)
- ![Copy of EXPLO](https://user-images.githubusercontent.com/78342516/152428330-dc7b0d41-897d-43df-a612-23594eee16fc.png)
-![Copy of EXPLO (1)](https://user-images.githubusercontent.com/78342516/152428359-8a34a2b1-3949-44f9-a6a1-315e1bffa312.png)
-  
-</p>
+The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS. The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid. This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing.
 
-The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS.The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid .This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing
-The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. For Various parameters like air velocity, pressure and temperature were simulated and plots were obtained and various testing like airflow simulation,stress analysis was done guaranteeing its functionality in the real world
+
+![bot](https://user-images.githubusercontent.com/78396437/152589170-78b3718a-d0b6-463f-b0e1-5b8f4161322f.jpeg) 
+
+
+The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. For Various parameters like air velocity, pressure and temperature were simulated and plots were obtained and various testing like airflow simulation,stress analysis was done guaranteeing its functionality in the real world.
+
+
+  <p float="center">
+  <img src="https://user-images.githubusercontent.com/78342516/152428330-dc7b0d41-897d-43df-a612-23594eee16fc.png" width="500" />
+  <img src="https://user-images.githubusercontent.com/78342516/152428359-8a34a2b1-3949-44f9-a6a1-315e1bffa312.png" width="500" /> 
+</p>
 
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
@@ -154,6 +158,15 @@ Find the demo of Navigation implementation [here](https://drive.google.com/file/
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 ## Features
+
+#### AI/ML Dependencies and Packages Required:
+
+* OpenCV
+* CV_bridge
+* Matplotlib
+* Numpy
+* Tensorflow-Keras(required for face recognition)
+ 
 
 ### Face Recognition
 
@@ -191,7 +204,9 @@ Find the demo of Threat Detection for baby  [here](https://drive.google.com/file
 - Here we use custum build algorithm using pretrained YOLOv3 weights to perform object detection.
 - The YOLOv3 (You Only Look Once) model is an object detection architecture that uses a 106 layer network comprising of multiple Convolution, residual and 1\*1 kernel layers to perform the object detection task.
 
-Find the demo of baby follwoing [here](https://drive.google.com/file/d/1JxuwaeDJQHta6C9UJmLCamdO-b6d8-8v/view)
+<img width="641" alt="ros3" src="https://user-images.githubusercontent.com/78396437/152594121-424af499-4c51-4f01-801e-1ba90570b325.png">
+
+Find the demo of baby follwoing [here](https://drive.google.com/file/d/1PfKwm_F6846Q7xqnyYsZGxO27Yt6TJu2/view?usp=sharing)
 
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
