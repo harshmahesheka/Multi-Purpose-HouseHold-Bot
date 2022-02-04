@@ -68,7 +68,7 @@ This a boon for all the working parents out there who are looking for a reliable
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 ## About the project
-
+We built our own vacuum cleaning household bot entirely from scratch using SolidWork and did various testing like airflow simulation,stress analysis guaranteeing its functionality in the real world. For navigation we used differential drive along with ROS Navigation stack and implemented 3 algorithms for Autonomus Mapping,Autonomus Navigation and Autonomus Optimal Complete Coverage.Also we implemented Resnet and YoloV3 Algorithms for Baby Monitoring.Threat Detection and Face Recognition.
 ### Built With
 
 The technologies used while building and testing the project are:
@@ -79,8 +79,49 @@ The technologies used while building and testing the project are:
 
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+How to set-up the project
+
+### Prerequisites
+
+Before getting started, make sure your systme meets the following requirements:
+* 
+  ```
+
+### Installation
+
+_Now that you're ready with the prerequisites, setup the project using the following steps._
+
+1. 
+2. Clone the repo
+   ```sh
+   git clone https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot.git
+   ```
+3. 
+4. 
+
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
+
+## Hardware
+
+<p float="left">
+  
+ ![EXPLO (1)](https://user-images.githubusercontent.com/78342516/152426551-8dad213e-0cb0-48df-8a62-15b817a533c4.png)
+ ![Copy of EXPLO](https://user-images.githubusercontent.com/78342516/152428330-dc7b0d41-897d-43df-a612-23594eee16fc.png)
+![Copy of EXPLO (1)](https://user-images.githubusercontent.com/78342516/152428359-8a34a2b1-3949-44f9-a6a1-315e1bffa312.png)
+  
+</p>
 
 
+
+The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS.The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid .This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing
+The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. For Various parameters like air velocity, pressure and temperature were simulated and plots were obtained and various testing like airflow simulation,stress analysis was done guaranteeing its functionality in the real world
+
+
+<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 
 ## Navigation
@@ -88,9 +129,24 @@ The technologies used while building and testing the project are:
 <img width="638" alt="ros" src="https://user-images.githubusercontent.com/78342516/152424295-a60876e4-98ac-4be3-befd-8f7058902725.PNG">
 
 
-We implemented ROS Navigation Stack on our Bot to autonomously navigate it through house. We used Gmappping SLam for map making,AMCL for localization, teb_local_planner as local planner and A* based algorithm as global planner
+We used Differntial Drive along with ROS Navigation Stack on our Bot to autonomously navigate it through house.We developed 4 moods fot it's navigation-
 
+ a.*Teleop Controlled*-In this ypu can simply control bots motion by publishing on cmd_vel topic.
 
+ b.*Autonomus Mapping*This will be used when a new bot comes to home,in this bot will atonomusly map the whole house by finding regions which are not mapped.We used <a href="http://wiki.ros.org/explore_lite">explore_lite</a> along with ROS Navigation Stack for this.To launch this mood run
+ ```bash
+ roslaunch rbot mapping.launch
+ ```
+ 
+ c.*Autonmous Navigation*-This will allow you to autonomusly send bot anywhere in generated also avoiding both static and dynamic obstacles.We used ROS Navigation Stack along with <a href="http://wiki.ros.org/teb_local_planner">teb_local_planner</a> as local planner.To launch this mood run 
+  ```bash
+ roslaunch rbot navigation.launch
+ ```
+ d.*Autonomus Complete Coverage*-In night you can simply run this mood and bot will autonomusly vacuum your whole house following an optimal complete coverage path.We have used <a href="http://wiki.ros.org/full_coverage_path_planner">full_coverage_path_planner</a> as global planner along with teb_local_planner as local planner.To launch this mood run-
+ ```bash
+ roslaunch rbot complete_coverage.launch
+ ```
+  
 Find the demo of Navigation implementation [here](https://drive.google.com/file/d/1GFb-_O2ioxu-zdwylFPfyHNaHDGUox7V/view)
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
@@ -117,52 +173,6 @@ Find the demo of baby follwoing [here](https://drive.google.com/file/d/1JxuwaeDJ
 
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
-
-## Hardware
-
-<p float="left">
-  
- ![EXPLO (1)](https://user-images.githubusercontent.com/78342516/152426551-8dad213e-0cb0-48df-8a62-15b817a533c4.png)
- ![Copy of EXPLO](https://user-images.githubusercontent.com/78342516/152428330-dc7b0d41-897d-43df-a612-23594eee16fc.png)
-![Copy of EXPLO (1)](https://user-images.githubusercontent.com/78342516/152428359-8a34a2b1-3949-44f9-a6a1-315e1bffa312.png)
-  
-</p>
-
-
-
-* The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS.
-* The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid . This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing
-* The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.
-* The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. Various parameters like air velocity, pressure and temperature were simulated and plots were obtained.
-
-
-<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-How to set-up the project
-
-### Prerequisites
-
-Before getting started, make sure your systme meets the following requirements:
-* 
-  ```
-
-### Installation
-
-_Now that you're ready with the prerequisites, setup the project using the following steps._
-
-1. 
-2. Clone the repo
-   ```sh
-   git clone https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot.git
-   ```
-3. 
-4. 
-
-<p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
