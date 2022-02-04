@@ -103,6 +103,11 @@ cd catkin_ws/src
 git clone https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot
 catkin build ./
 ```
+
+To launch bot in household environment run 
+```
+roslaunch rbot house.launch 
+```
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 ## Hardware
