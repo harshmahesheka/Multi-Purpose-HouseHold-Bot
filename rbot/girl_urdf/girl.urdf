@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Girl_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.025376 -0.018352 0.7693"
+        rpy="0 0 0" />
+      <mass
+        value="68.121" />
+      <inertia
+        ixx="19.389"
+        ixy="0.039653"
+        ixz="0.41951"
+        iyy="18.21"
+        iyz="0.65153"
+        izz="1.9306" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbot/girl_urdf/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.96471 0.96471 0.95294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbot/girl_urdf/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

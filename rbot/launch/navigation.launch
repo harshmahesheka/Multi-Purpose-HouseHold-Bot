@@ -1,0 +1,25 @@
+<launch>
+ <!-- Run the map server --> 
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find rbot)/map/map.yaml"/>
+
+ <!--- Run AMCL --> 
+    <include file="$(find amcl)/examples/amcl_diff.launch" />
+
+   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find rbot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+    <rosparam file="$(find rbot)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find rbot)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find rbot)/config/global_costmap_params.yaml" command="load" /> 
+    <rosparam file="$(find rbot)/config/base_local_planner_params.yaml" command="load" />
+    <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+</node>
+
+    <param name="controller_frequency" value="10"/>
+    
+    <!-- <param name="controller_patience" value="15.0"/> -->
+    <arg name="rviz_file"  default="$(find rbot)/config/nav.rviz" />
+
+     <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_file)"/>
+     
+
+</launch> 

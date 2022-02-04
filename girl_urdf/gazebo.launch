@@ -1,0 +1,10 @@
+<launch>
+
+  <node
+    name="spawn_modelg"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find rbot)/girl_urdf/girl.urdf -urdf -model Girl URDF"
+    output="screen" />
+
+</launch>

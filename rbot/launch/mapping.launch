@@ -1,0 +1,22 @@
+<launch>
+   <include file="$(find rbot)/launch/scan.launch" />
+   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find rbot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+    <rosparam file="$(find rbot)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find rbot)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find rbot)/config/global_costmap_params.yaml" command="load" /> 
+    <rosparam file="$(find rbot)/config/base_local_planner_params.yaml" command="load" />
+    <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+
+    <param name="controller_frequency" value="10"/>
+
+   </node>
+
+  <node pkg="explore_lite" type="explore" respawn="true" name="explore" output="screen">
+    <rosparam file="$(find explore_lite)/config/exploration.yaml" command="load" />
+  </node>
+   <arg name="rviz_file"  default="$(find rbot)/config/nav.rviz" />
+
+     <node name="rvizm" pkg="rviz" type="rviz" args="-d $(arg rviz_file)"/>
+     
+</launch> 

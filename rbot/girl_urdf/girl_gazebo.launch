@@ -1,0 +1,5 @@
+<launch>
+<param name="girl_description" command="cat '$(find rbot)/girl_urdf/girl.urdf'" />  
+ <node name="mybot_spawn1" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -param girl_description -model girl -x -5 -y 1 -z 1 -R 0 -P 0 -Y 0" />
+</launch>
