@@ -1,0 +1,140 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2021 SP0.0. Build: 5075
+                Computer name:   LAPTOP-RH9F7J3P
+                User name:   jaynil
+                Processors:   11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+                Memory:   7991 MB / 1732 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.19042)
+                CAD version:   SOLIDWORKS 2021 SP0.0
+                CPU speed:   2419 MHz
+
+    General Info
+                Model:   Simulation Centrifugal Pump Assembly.SLDASM
+                Project name:   CFD Simulation : Centrifugal Pump - Multipurpose Household Bot
+                Project path:   C:\Users\Jaynil\Documents\My Documents\Club activities\Mechanical Design & Simulation\Softwares\SolidWorks\My SW Files\RoboReg project\Bot\Final Files\Simulation3 (FINAL)\1
+                Units system:   SI (m-kg-s)
+                Analysis type:   Internal
+                Exclude cavities without flow conditions :   Off
+                Coordinate system:   Global Coordinate System
+                Reference axis:   Z
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   Off
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Free surface:   Off
+                Default roughness:   0 micrometer
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   -0.032 m
+                X max:   0.075 m
+                Y min:   -0.004 m
+                Y max:   0.111 m
+                Z min:   0.078 m
+                Z max:   0.127 m
+                X size:   0.106 m
+                Y size:   0.114 m
+                Z size:   0.049 m
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   12
+                Number of cells in Y:   14
+                Number of cells in Z:   6
+
+        Number Of Cells
+                Cells:   33344
+                Fluid cells:   33344
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   3
+
+    Goals
+
+        Surface Goals
+
+            p inlet
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<1>@LID17-1
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            p outlet
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<1>@LID28-1
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            volume flow rate inlet
+                Type:   Surface Goal
+                Goal type:   Volume Flow Rate
+                Faces:   Face<1>@LID17-1
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            volume flow rate outlet
+                Type:   Surface Goal
+                Goal type:   Volume Flow Rate
+                Faces:   Face<2>@LID28-1
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+            torque
+                Type:   Surface Goal
+                Goal type:   Torque (X)
+                Faces:   Face<36>@Simulation Centrifugal Pump Impeller-1, Face<33>@Simulation Centrifugal Pump Impeller-1, Face<7>@Simulation Centrifugal Pump Impeller-1, Face<34>@Simulation Centrifugal Pump Impeller-1, Face<31>@Simulation Centrifugal Pump Impeller-1, Face<28>@Simulation Centrifugal Pump Impeller-1, Face<24>@Simulation Centrifugal Pump Impeller-1, Face<12>@Simulation Centrifugal Pump Impeller-1, Face<5>@Simulation Centrifugal Pump Impeller-1, Face<9>@Simulation Centrifugal Pump Impeller-1, Face<29>@Simulation Centrifugal Pump Impeller-1, Face<23>@Simulation Centrifugal Pump Impeller-1, Face<11>@Simulation Centrifugal Pump Impeller-1, Face<4>@Simulation Centrifugal Pump Impeller-1, Face<3>@Simulation Centrifugal Pump Impeller-1, Face<2>@Simulation Centrifugal Pump Impeller-1, Face<20>@Simulation Centrifugal Pump Impeller-1, Face<42>@Simulation Centrifugal Pump Impeller-1, Face<32>@Simulation Centrifugal Pump Impeller-1, Face<27>@Simulation Centrifugal Pump Impeller-1, Face<37>@Simulation Centrifugal Pump Impeller-1, Face<16>@Simulation Centrifugal Pump Impeller-1, Face<10>@Simulation Centrifugal Pump Impeller-1, Face<8>@Simulation Centrifugal Pump Impeller-1, Face<26>@Simulation Centrifugal Pump Impeller-1, Face<19>@Simulation Centrifugal Pump Impeller-1, Face<15>@Simulation Centrifugal Pump Impeller-1, Face<21>@Simulation Centrifugal Pump Impeller-1, Face<6>@Simulation Centrifugal Pump Impeller-1, Face<35>@Simulation Centrifugal Pump Impeller-1, Face<22>@Simulation Centrifugal Pump Impeller-1, Face<38>@Simulation Centrifugal Pump Impeller-1, Face<30>@Simulation Centrifugal Pump Impeller-1, Face<25>@Simulation Centrifugal Pump Impeller-1, Face<18>@Simulation Centrifugal Pump Impeller-1, Face<17>@Simulation Centrifugal Pump Impeller-1, Face<14>@Simulation Centrifugal Pump Impeller-1, Face<13>@Simulation Centrifugal Pump Impeller-1, Face<1>@Simulation Centrifugal Pump Impeller-1
+                Coordinate system:   Global Coordinate System
+                Use in convergence :   On
+
+        Equation Goals
+
+            pressure drop
+                Type:   Equation Goal
+                Formula:   p inlet-p outlet
+                Dimensionality:   Pressure & stress
+                Use in convergence :   On
+
+            efficiency
+                Type:   Equation Goal
+                Formula:   abs((pressure drop*volume flow rate inlet)/(523.6*torque))
+                Dimensionality:   Volume flow rate
+                Use in convergence :   On
+
+    Goals
+                
+                Name                      	Unit    	Value       	Progress   	Criteria         	Delta            	Use in convergence 
+                p inlet                   	Pa      	101324.87   	100        	0.154108762      	0.00361952154    	On                 
+                p outlet                  	Pa      	102543.16   	32         	12.7279301       	39.1845684       	On                 
+                volume flow rate inlet    	m^3/s   	0.0251      	100        	0.000602890787   	0.000256586596   	On                 
+                volume flow rate outlet   	m^3/s   	-0.0253     	91         	0.00036694605    	0.000401176375   	On                 
+                torque                    	N*m     	0.083       	100        	0.0495986844     	0.0241476815     	On                 
+                pressure drop             	Pa      	-1218.29    	32         	12.7333882       	39.1878008       	On                 
+                efficiency                	m^3/s   	0.7016      	100        	0.181530857      	0.122560427      	On                 
+
+    General Info
+                Run at:   LAPTOP-RH9F7J3P
+                Number of cores:   8
+                Iterations:   253
+                CPU time:   131 s
+
+        Log
+                Mesh generation started	0:   19:33:23 , Jan 31
+                Mesh generation normally finished	0:   19:33:25 , Jan 31
+                Preparing data for calculation	0:   19:33:26 , Jan 31
+                Calculation started	0:   19:33:28 , Jan 31
+                Calculation has converged since the following criteria are satisfied:	253:   19:35:38 , Jan 31
+                    Max. travel is reached	253:   
+                Calculation finished	253:   19:35:39 , Jan 31

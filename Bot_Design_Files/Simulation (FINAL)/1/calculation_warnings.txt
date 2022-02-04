@@ -1,0 +1,7 @@
+2022-Jan-31 19:35:38
+Computer name:	LAPTOP-RH9F7J3P
+Number of cores used in calculation:	8
+Configuration name:	Default
+Project name:	CFD Simulation : Centrifugal Pump - Multipurpose Household Bot
+
+Warnings on last iteration: 
