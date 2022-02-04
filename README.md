@@ -88,21 +88,21 @@ How to set-up the project
 ### Prerequisites
 
 Before getting started, make sure your systme meets the following requirements:
-* 
-  ```
+
+* [ROS](https://www.ros.org/)
+* [Gazebo](http://gazebosim.org/)
+ 
+  
 
 ### Installation
 
-_Now that you're ready with the prerequisites, setup the project using the following steps._
+Now that you're ready with the prerequisites, setup the project using the following steps-
 
-1. 
-2. Clone the repo
-   ```sh
-   git clone https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot.git
-   ```
-3. 
-4. 
-
+```
+cd catkin_ws/src
+git clone https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot
+catkin build ./
+```
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 ## Hardware
