@@ -153,7 +153,17 @@ Find the demo of Navigation implementation [here](https://drive.google.com/file/
 
 ## Features
 
-### Face Detection
+### Face Recognition
+
+- We use a custom build AI model, combinind both, a pretrained ResNet model and the OpenCV haarcascade funtion to develop face recognition algorithm.
+
+- The weights of the model were pretrained, they convert the image into a vector of length 128. And then the vectors are compared between themselves using a siamese network architecture. 
+
+- The OpenCV haarcascade function first detects all the images in a given frame and then compares the faces with those present in the database. (Already stored in the system)
+
+- If the faces match or are within a threshold value, the bot recognises the person and greets him/ Her. If not, the bot considers it as an intruder and triggers an alarm through the system.
+- You can see the code [here](https://colab.research.google.com/drive/1R8DMmd4irxbfXU8tUebgAP64VtLyI3eQ?usp=sharing)
+
 
 <img width="638" alt="ros2" src="https://user-images.githubusercontent.com/78342516/152424555-22d898be-4785-43a8-8774-770f3140c19f.PNG">
 
