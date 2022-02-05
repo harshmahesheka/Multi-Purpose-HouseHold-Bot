@@ -10,7 +10,7 @@
   <p align="center">
     One bot that does it all!
     <br />
-    <a href=" "><strong>Explore the demo here »</strong></a>
+    <a href="https://drive.google.com/drive/folders/1GCVpS-n3Cwb81qfl302VCN4rVFZyaDVV?usp=sharing"><strong>Explore the demo here »</strong></a>
     <br />
     <br />
     <a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/issues">Report Bug</a>
@@ -114,15 +114,23 @@ roslaunch rbot house.launch
 ## Hardware
 The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS. The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid. This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing.
 
-The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. For Various parameters like air velocity, pressure and temperature were simulated and plots were obtained and various testing like airflow simulation,stress analysis was done guaranteeing its functionality in the real world.
 
-The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS. The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid. This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing.
+![bot](https://user-images.githubusercontent.com/78502324/152645793-a3ea45c9-3674-4c62-82b7-cb3bfffda549.png) 
+
+We also conducted these tests to ensure the functioning of the bot-
+
+a.Airflow (CFD-computational fluid dynamics): Simulated the  trajectories of air, dust particles inside the vacuum system of the bot and around the fan to ensure its proper working and for ensuring proper dust collection, calculating suction force
 
 
-![bot](https://user-images.githubusercontent.com/78396437/152589170-78b3718a-d0b6-463f-b0e1-5b8f4161322f.jpeg) 
+b.Stress analysis (FEA-finite element analysis): To ensure that the main body or wheels do not deform/break due to the weight of other components present inside or when it (by mistake) collides with any object/wall / human interaction.
 
 
-The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. For Various parameters like air velocity, pressure and temperature were simulated and plots were obtained and various testing like airflow simulation,stress analysis was done guaranteeing its functionality in the real world.
+
+
+  <p float="center">
+  <img src="https://user-images.githubusercontent.com/78342516/152428330-dc7b0d41-897d-43df-a612-23594eee16fc.png" width="500" />
+  <img src="https://user-images.githubusercontent.com/78342516/152428359-8a34a2b1-3949-44f9-a6a1-315e1bffa312.png" width="500" /> 
+</p>
 
 
 
@@ -205,6 +213,12 @@ Find the demo of Threat Detection for baby  [here](https://drive.google.com/file
 - The YOLOv3 (You Only Look Once) model is an object detection architecture that uses a 106 layer network comprising of multiple Convolution, residual and 1\*1 kernel layers to perform the object detection task.
 
 <img width="641" alt="ros3" src="https://user-images.githubusercontent.com/78396437/152594121-424af499-4c51-4f01-801e-1ba90570b325.png">
+
+For launching this mode run following command-
+ ```
+ cd catkin_ws/src/Multi-Purpose-HouseHold-Bot/yolo/src
+ rosrun yolo cmd_vel_robot.py
+ ```
 
 Find the demo of baby follwoing [here](https://drive.google.com/file/d/1PfKwm_F6846Q7xqnyYsZGxO27Yt6TJu2/view?usp=sharing)
 
