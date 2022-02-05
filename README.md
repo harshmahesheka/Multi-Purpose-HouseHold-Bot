@@ -112,6 +112,9 @@ roslaunch rbot house.launch
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
 
 ## Hardware
+The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS. The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid. This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing.
+
+The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. For Various parameters like air velocity, pressure and temperature were simulated and plots were obtained and various testing like airflow simulation,stress analysis was done guaranteeing its functionality in the real world.
 
 The CAD model of the bot was created using Solidworks. Further, an URDF file was created using the model considering the motion along all the links which were to be controlled and simulated using ROS. The bot’s vacuum system is based on a centrifugal pump. Centrifugal pump is a machine that imparts energy to fluid. This energy can cause a fluid to flow or rise to a higher level. It consists of two basic parts: The rotary element or impeller and the stationary element or casing.
 
@@ -122,10 +125,7 @@ The CAD model of the bot was created using Solidworks. Further, an URDF file was
 The vacuum system of the bot sucks in air along with dust particles from the bottom and transports it to the detachable dust collector.The analysis of the vacuum system was done using the SolidWorks Flow Simulation tool. For Various parameters like air velocity, pressure and temperature were simulated and plots were obtained and various testing like airflow simulation,stress analysis was done guaranteeing its functionality in the real world.
 
 
-  <p float="center">
-  <img src="https://user-images.githubusercontent.com/78342516/152428330-dc7b0d41-897d-43df-a612-23594eee16fc.png" width="500" />
-  <img src="https://user-images.githubusercontent.com/78342516/152428359-8a34a2b1-3949-44f9-a6a1-315e1bffa312.png" width="500" /> 
-</p>
+
 
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
