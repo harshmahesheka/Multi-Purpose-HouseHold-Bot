@@ -178,13 +178,13 @@ Find the demo of Navigation implementation [here](https://drive.google.com/file/
 
 ### Face Recognition
 
-- We use a custom build AI model, combinind both, a pretrained ResNet model and the OpenCV haarcascade funtion to develop face recognition algorithm.
+- We use a custom build AI model, combining both, a pretrained ResNet model and the OpenCV haarcascade funtion to develop face recognition algorithm.
 
 - The weights of the model were pretrained, they convert the image into a vector of length 128. And then the vectors are compared between themselves using a siamese network architecture. 
 
 - The OpenCV haarcascade function first detects all the images in a given frame and then compares the faces with those present in the database. (Already stored in the system)
 
-- If the faces match or are within a threshold value, the bot recognises the person and greets him/ Her. If not, the bot considers it as an intruder and triggers an alarm through the system.
+- If the faces match or are within a threshold value, the bot recognises the person and greets them. If not, the bot considers it as an intruder and triggers an alarm through the system.
 - You can see the code [here](https://colab.research.google.com/drive/1R8DMmd4irxbfXU8tUebgAP64VtLyI3eQ?usp=sharing)
 
 
@@ -220,7 +220,7 @@ For launching this mode run following command-
  rosrun yolo cmd_vel_robot.py
  ```
 
-Find the demo of baby follwoing [here](https://drive.google.com/file/d/1PfKwm_F6846Q7xqnyYsZGxO27Yt6TJu2/view?usp=sharing)
+Find the demo of baby following [here](https://drive.google.com/file/d/1PfKwm_F6846Q7xqnyYsZGxO27Yt6TJu2/view?usp=sharing)
 
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
