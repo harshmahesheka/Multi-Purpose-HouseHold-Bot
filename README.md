@@ -220,7 +220,7 @@ For launching this mode run following command-
  rosrun yolo cmd_vel_robot.py
  ```
 
-Find the demo of baby follwoing [here](https://drive.google.com/file/d/1PfKwm_F6846Q7xqnyYsZGxO27Yt6TJu2/view?usp=sharing)
+Find the demo of baby following [here](https://drive.google.com/file/d/1PfKwm_F6846Q7xqnyYsZGxO27Yt6TJu2/view?usp=sharing)
 
 
 <p align="right">(<a href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot/blob/main/README.md">back to top</a>)</p>
